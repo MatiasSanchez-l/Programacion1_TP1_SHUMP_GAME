@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 866a07690a11c124e8d2a61b54c275ed
+guid: d7ee1019833cbb44185e1efcd94117f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7065228894613551838
-    second: Skybox Castle outside_0
+      213: 7277215093650894194
+    second: Devil_0
+  - first:
+      213: -2513883589942956498
+    second: Devil_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +103,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skybox Castle outside_0
+      name: Devil_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 1
         y: 0
-        width: 160
-        height: 240
+        width: 47
+        height: 28
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +118,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eda34481f3cbc0260800000000000000
-      internalID: 7065228894613551838
+      spriteID: 27d2c23429cddf460800000000000000
+      internalID: 7277215093650894194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Devil_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e24cea134ec1dd0800000000000000
+      internalID: -2513883589942956498
       vertices: []
       indices: 
       edges: []
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Skybox Castle outside_0: 7065228894613551838
+      Devil_0: 7277215093650894194
+      Devil_1: -2513883589942956498
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
