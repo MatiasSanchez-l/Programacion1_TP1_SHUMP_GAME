@@ -7,6 +7,13 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 
+# Carpetas que genera Unity 6
+/[Rr]ecordings/
+/.utmp/
+
+# Plugins de Rider que Unity crea automáticamente
+/[Aa]ssets/[Pp]lugins/[Ee]ditor/[Jj]et[Bb]rains*
+
 # Archivos temporales de memoria
 /[Mm]emory[Cc]aptures/
 
@@ -16,6 +23,7 @@ ExportedObj/
 *.csproj
 *.unityproj
 *.sln
+*.slnx
 *.suo
 *.tmp
 *.user
@@ -41,3 +49,13 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+
+# Carpetas de IDEs
+.vs/
+.vscode/
+.idea/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+Desktop.ini
