@@ -6,6 +6,7 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+/UIElementsSchema/
 
 # Carpetas que genera Unity 6
 /[Rr]ecordings/

@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
     {
         Move();
 
-        // GetKey (mantener apretado); la cadencia la controla cada Gun
         if (Input.GetKey(KeyCode.Z))
         {
             Shoot();
@@ -55,6 +54,20 @@ public class Player : MonoBehaviour
         foreach (Gun gun in guns)
         {
             gun.Shoot();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision){
+        Bullet bullet = collision.GetComponent<Bullet>();
+        if(bullet != null && bullet.IsEnemyBullet()){
+            Destroy(gameObject);
+            Destroy(bullet.gameObject);
+        }
+
+        ReceiveDamage enemy = collision.GetComponent<ReceiveDamage>();
+        if(enemy != null){
+            Destroy(gameObject);
+            Destroy(enemy.gameObject);
         }
     }
 }

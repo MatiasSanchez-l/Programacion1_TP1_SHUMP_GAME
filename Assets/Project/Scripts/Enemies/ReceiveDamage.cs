@@ -21,7 +21,7 @@ public class ReceiveDamage : MonoBehaviour
         if(!canReceiveDamage) return;
 
         Bullet bullet = collision.GetComponent<Bullet>();
-        if(bullet != null){
+        if(bullet != null && !bullet.IsEnemyBullet()){
             Destroy(gameObject);
             Destroy(bullet.gameObject);
         }

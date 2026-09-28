@@ -106,12 +106,12 @@ TextureImporter:
       name: Devil_0
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 0
-        width: 47
+        width: 48
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -128,12 +128,12 @@ TextureImporter:
       name: Devil_1
       rect:
         serializedVersion: 2
-        x: 47
+        x: 48
         y: 0
-        width: 49
+        width: 48
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c2f21c5eae496844fa3ebe7f906fc0c7
     internalID: 0
     vertices: []
     indices: 
