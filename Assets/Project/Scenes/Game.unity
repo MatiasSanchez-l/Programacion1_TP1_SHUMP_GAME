@@ -950,6 +950,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1839873495}
   - component: {fileID: 1839873496}
+  - component: {fileID: 1839873500}
+  - component: {fileID: 1839873499}
   - component: {fileID: 1839873498}
   - component: {fileID: 1839873497}
   m_Layer: 0
@@ -988,8 +990,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 951ba7f5694982446bd0986b489cb11f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  moveSpeed: 12
-  padding: 0.5
 --- !u!61 &1839873497
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1063,6 +1063,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
+--- !u!114 &1839873499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839873494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4439c74c1a056e46ab517e4ed4f25e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
+--- !u!114 &1839873500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839873494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d3e89d59325044a8c8906ad56b704f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  moveSpeed: 8
+  padding: 0.2
 --- !u!1 &1879662267
 GameObject:
   m_ObjectHideFlags: 0
