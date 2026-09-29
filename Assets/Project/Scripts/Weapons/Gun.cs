@@ -8,11 +8,9 @@ public class Gun : MonoBehaviour
     [SerializeField] private float shootDelay = 0f; // espera desde que entra en pantalla
 
     private float nextShotTime;
-    private Camera cam;
 
     void Start()
     {
-        cam = Camera.main;
         nextShotTime = Time.time + shootDelay;
     }
 
@@ -39,7 +37,7 @@ public class Gun : MonoBehaviour
 
     private bool IsOnScreen()
     {
-        Vector3 viewportPos = cam.WorldToViewportPoint(transform.position);
+        Vector3 viewportPos = Camera.main.WorldToViewportPoint(transform.position);
         return viewportPos.x >= 0 && viewportPos.x <= 1 &&
                viewportPos.y >= 0 && viewportPos.y <= 1;
     }

@@ -17,6 +17,9 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         CalculateBounds();
+        if(!isEnemy){
+            DontDestroyOnLoad(gameObject);
+        }
     }
 
     void Update()

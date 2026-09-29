@@ -12,16 +12,19 @@ public class Level : MonoBehaviour
     private float nextLevelTimer;
 
     private void Awake(){
-        instance = this;
+        if(instance == null){
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }else{
+            Destroy(gameObject);
+        }
     }
 
-    void OnDestroy()
-    {
+    void OnDestroy(){
         if (instance == this) instance = null;
     }
 
-    void Update()
-    {
+    void Update(){
         if (!levelCompleted) return;
 
         nextLevelTimer -= Time.deltaTime;
