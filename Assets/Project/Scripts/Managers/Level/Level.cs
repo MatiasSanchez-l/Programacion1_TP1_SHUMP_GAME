@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;          
 
 public class Level : MonoBehaviour
 {
@@ -7,9 +8,27 @@ public class Level : MonoBehaviour
 
     [SerializeField] private float nextLevelDelay = 3f;
     [SerializeField] private int numEnemies = 0;
+    [SerializeField] private TMP_Text scoreText;
 
+    private int score = 0;      
     private bool levelCompleted = false;
     private float nextLevelTimer;
+
+    void Start()
+    {
+        UpdateScoreText();
+    }
+
+    public void AddScore(int points)
+    {
+        score += points;
+        UpdateScoreText();
+    }
+
+    private void UpdateScoreText()
+    {
+        scoreText.text = "SCORE: " + score.ToString("D6");
+    }
 
     private void Awake(){
         if(instance == null){

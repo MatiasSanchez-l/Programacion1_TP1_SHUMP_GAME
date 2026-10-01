@@ -22,6 +22,9 @@ public class ReceiveDamage : MonoBehaviour
 
         Bullet bullet = collision.GetComponent<Bullet>();
         if(bullet != null && !bullet.IsEnemyBullet()){
+            if (TryGetComponent(out Enemy enemy)){
+            Level.instance.AddScore(enemy.Points);
+            }
             Destroy(gameObject);
             Destroy(bullet.gameObject);
         }
