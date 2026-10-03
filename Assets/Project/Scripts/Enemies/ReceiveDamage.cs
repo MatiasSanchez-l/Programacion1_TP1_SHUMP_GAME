@@ -19,14 +19,21 @@ public class ReceiveDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision){
         if(!canReceiveDamage) return;
-
-        Bullet bullet = collision.GetComponent<Bullet>();
-        if(bullet != null && !bullet.IsEnemyBullet()){
-            if (TryGetComponent(out Enemy enemy)){
-            Level.instance.AddScore(enemy.Points);
+        
+        if(collision.TryGetComponent(out Bullet bullet)){
+            if (!bullet.IsEnemyBullet())
+            {
+                AddScore();
+                Destroy(gameObject);
+                Destroy(bullet.gameObject);
             }
-            Destroy(gameObject);
-            Destroy(bullet.gameObject);
+        }
+    }
+
+    void AddScore()
+    {
+        if (TryGetComponent(out Enemy enemy)){
+            Level.instance.AddScore(enemy.Points);
         }
     }
 }

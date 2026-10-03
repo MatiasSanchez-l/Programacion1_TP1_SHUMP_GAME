@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4632037364268799678}
   m_Layer: 0
   m_Name: BulletType2
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48,8 +48,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   direction: {x: 1, y: 0}
   speed: 6
-  lifetime: 1.8
   isEnemy: 1
+  screenMargin: 0.5
 --- !u!61 &4632037364268799678
 BoxCollider2D:
   m_ObjectHideFlags: 0
