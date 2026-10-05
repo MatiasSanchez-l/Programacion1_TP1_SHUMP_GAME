@@ -9,6 +9,7 @@ public class Level : MonoBehaviour
     [SerializeField] private float nextLevelDelay = 3f;
     [SerializeField] private int numEnemies = 0;
     [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private GameObject gameOverPanel;
 
     private int score = 0;      
     private bool levelCompleted = false;
@@ -17,6 +18,7 @@ public class Level : MonoBehaviour
     void Start()
     {
         UpdateScoreText();
+        gameOverPanel.SetActive(false);
     }
 
     public void AddScore(int points)
@@ -81,5 +83,22 @@ public class Level : MonoBehaviour
         {
             Debug.Log("¡Ganaste! No hay más niveles");
         }
+    }
+
+    public void GameOver(){
+        gameOverPanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    public void Retry(){
+        Time.timeScale = 1f;
+        instance = null;
+        Destroy(gameObject);
+
+        SceneManager.LoadScene("Level1");
+    }
+
+    public void GoToMenu(){
+        Debug.Log("Menú: todavía no implementado");
     }    
 }

@@ -52,6 +52,7 @@ public class Player : MonoBehaviour
         }
         else
         {
+            Level.instance.GameOver();
             Destroy(gameObject);
         }
     }
