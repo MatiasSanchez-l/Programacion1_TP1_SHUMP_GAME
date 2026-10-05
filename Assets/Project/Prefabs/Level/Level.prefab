@@ -100,6 +100,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   shield: {fileID: 1850564712862994613}
+  playerSprite: {fileID: 4634487371852988740}
+  invincibleDuration: 1.5
+  blinkInterval: 0.08
+  blinkAlpha: 0.25
 --- !u!114 &6599054752087698079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,7 +670,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Shield
   spriteRenderer: {fileID: 6326497954984638951}
-  blinkInterval: 0.1
+  pulseDuration: 0.6
+  minAlpha: 0.2
+  maxAlpha: 0.7
 --- !u!1 &7534933316115965216
 GameObject:
   m_ObjectHideFlags: 0

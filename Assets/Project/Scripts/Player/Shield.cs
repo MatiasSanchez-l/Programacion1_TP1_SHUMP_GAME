@@ -3,16 +3,20 @@ using UnityEngine;
 public class Shield : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private float blinkInterval = 0.1f;
+    [SerializeField] private float pulseDuration = 0.6f; // segundos de opaco a transparente
+    [SerializeField, Range(0f, 1f)] private float minAlpha = 0.2f;
+    [SerializeField, Range(0f, 1f)] private float maxAlpha = 0.7f;
 
-     public bool IsActive => gameObject.activeSelf;
+    public bool IsActive => gameObject.activeSelf;
 
     public void Activate()   { gameObject.SetActive(true); }
     public void Deactivate() { gameObject.SetActive(false); }
 
-    // Update is called once per frame
-    void Update()
-    {
-        spriteRenderer.enabled = Mathf.Repeat(Time.time, blinkInterval * 2) < blinkInterval;
+    void Update(){
+        float t = Mathf.PingPong(Time.time / pulseDuration, 1f);
+
+        Color color = spriteRenderer.color;
+        color.a = Mathf.Lerp(minAlpha, maxAlpha, t);
+        spriteRenderer.color = color;
     }
 }
