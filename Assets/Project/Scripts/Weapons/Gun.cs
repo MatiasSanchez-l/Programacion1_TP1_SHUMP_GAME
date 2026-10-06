@@ -5,7 +5,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private Bullet bullet;
     [SerializeField] private float fireRate = 0.15f;
     [SerializeField] private bool autoShoot = false;
-    [SerializeField] private float shootDelay = 0f; // espera desde que entra en pantalla
+    [SerializeField] private float shootDelay = 0f;
 
     private float nextShotTime;
 

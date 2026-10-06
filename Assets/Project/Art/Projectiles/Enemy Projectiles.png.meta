@@ -183,7 +183,7 @@ TextureImporter:
         x: 48
         y: 24
         width: 24
-        height: 23
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -378,10 +378,10 @@ TextureImporter:
       name: Enemy Projectiles_11
       rect:
         serializedVersion: 2
-        x: 95
+        x: 96
         y: 0
-        width: 73
-        height: 25
+        width: 24
+        height: 24
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,6 +392,50 @@ TextureImporter:
       bones: []
       spriteID: 9ed811a9bed73f070800000000000000
       internalID: 8138987402444246505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Projectiles_12
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92629962c7df25e4dac9f01b352660b4
+      internalID: 1176388555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy Projectiles_13
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf381711e845d342b5fb87e052ed357
+      internalID: 1627979548
       vertices: []
       indices: 
       edges: []
@@ -408,12 +452,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":24.0,"y":24.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Enemy Projectiles_0: 2217687846121337703
       Enemy Projectiles_1: -1112806316351120556
       Enemy Projectiles_10: -982346091463779002
       Enemy Projectiles_11: 8138987402444246505
+      Enemy Projectiles_12: 1176388555
+      Enemy Projectiles_13: 1627979548
       Enemy Projectiles_2: -6429706747349274084
       Enemy Projectiles_3: 1707755281423733641
       Enemy Projectiles_4: 8213954453369192620

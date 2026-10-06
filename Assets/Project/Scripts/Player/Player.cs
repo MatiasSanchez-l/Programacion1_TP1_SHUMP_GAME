@@ -3,6 +3,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private Shield shield;
+    [SerializeField] private Gun[] extraGuns;
 
     [Header("Invencibilidad")]
     [SerializeField] private SpriteRenderer playerSprite;
@@ -16,6 +17,7 @@ public class Player : MonoBehaviour
 
     void Start(){
         shield.Deactivate();
+        SetExtraGunsActive(false);
     }
 
     void Update(){
@@ -82,8 +84,16 @@ public class Player : MonoBehaviour
                 shield.Activate();
                 break;
             case PowerUpType.ExtraGuns:
-                // TODO
+                SetExtraGunsActive(true);
                 break;
+        }
+    }
+
+    private void SetExtraGunsActive(bool active)
+    {
+        foreach (Gun gun in extraGuns)
+        {
+            gun.gameObject.SetActive(active);
         }
     }
 }

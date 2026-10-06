@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6977564923881958827}
   - component: {fileID: 4616686882964365925}
+  - component: {fileID: 4710307562013246674}
   - component: {fileID: 4632037364268799678}
   m_Layer: 0
-  m_Name: BulletType2
+  m_Name: BulletBar
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -50,6 +51,21 @@ MonoBehaviour:
   speed: 6
   isEnemy: 1
   screenMargin: 0.5
+--- !u!114 &4710307562013246674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360644628510682771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd450b4255e923409819da82fd5d05a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MoveSin
+  amplitude: 4
+  frequency: 0.4
+  inverted: 0
 --- !u!61 &4632037364268799678
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -94,7 +110,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.26, y: 0.43}
+  m_Size: {x: 0.22, y: 0.28}
   m_EdgeRadius: 0
 --- !u!1 &5226039867966630876
 GameObject:
@@ -177,7 +193,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6429706747349274084, guid: d8131aceeaedb734ea2c5ce12f95d4a6, type: 3}
+  m_Sprite: {fileID: 8213954453369192620, guid: d8131aceeaedb734ea2c5ce12f95d4a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0

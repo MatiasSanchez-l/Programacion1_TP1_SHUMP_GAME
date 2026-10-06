@@ -6,7 +6,8 @@ public class PlayerShooting : MonoBehaviour
 
     private Gun[] guns;
 
-    void Start() { guns = GetComponentsInChildren<Gun>(); }
+    // true = incluye también las armas desactivadas (las extra)
+    void Start() { guns = GetComponentsInChildren<Gun>(true); }
 
     void Update()
     {
@@ -14,7 +15,10 @@ public class PlayerShooting : MonoBehaviour
 
         if (shooting)
         {
-            foreach (Gun gun in guns) gun.Shoot();
+            foreach (Gun gun in guns)
+            {
+                if (gun.gameObject.activeInHierarchy) gun.Shoot();
+            }
         }
 
         spriteAnimator.SetAttacking(shooting);

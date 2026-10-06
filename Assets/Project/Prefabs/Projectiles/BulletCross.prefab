@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4616686882964365925}
   - component: {fileID: 4632037364268799678}
   m_Layer: 0
-  m_Name: BulletType2
+  m_Name: BulletCross
   m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   direction: {x: 1, y: 0}
-  speed: 6
+  speed: 7
   isEnemy: 1
   screenMargin: 0.5
 --- !u!61 &4632037364268799678
@@ -84,7 +84,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.03}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -94,7 +94,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.26, y: 0.43}
+  m_Size: {x: 0.5, y: 0.19}
   m_EdgeRadius: 0
 --- !u!1 &5226039867966630876
 GameObject:
@@ -177,9 +177,9 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6429706747349274084, guid: d8131aceeaedb734ea2c5ce12f95d4a6, type: 3}
+  m_Sprite: {fileID: 4823480161949112894, guid: d8131aceeaedb734ea2c5ce12f95d4a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.8125, y: 0.40625}
