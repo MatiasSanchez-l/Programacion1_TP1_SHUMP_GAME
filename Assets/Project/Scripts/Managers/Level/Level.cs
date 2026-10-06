@@ -91,14 +91,18 @@ public class Level : MonoBehaviour
     }
 
     public void Retry(){
-        Time.timeScale = 1f;
-        instance = null;
-        Destroy(gameObject);
-
-        SceneManager.LoadScene("Level1");
+        LeaveTo("Level1");
     }
 
     public void GoToMenu(){
-        Debug.Log("Menú: todavía no implementado");
+        LeaveTo("Menu");
     }    
+
+    private void LeaveTo(string sceneName)
+    {
+        Time.timeScale = 1f;
+        instance = null;
+        Destroy(gameObject);
+        SceneManager.LoadScene(sceneName);
+    }
 }

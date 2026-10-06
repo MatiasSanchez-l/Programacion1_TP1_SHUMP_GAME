@@ -1157,8 +1157,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Shield
   spriteRenderer: {fileID: 6326497954984638951}
   pulseDuration: 0.6
-  minAlpha: 0.2
-  maxAlpha: 0.7
+  minAlpha: 0.1
+  maxAlpha: 0.2
 --- !u!1 &7414016001584577712
 GameObject:
   m_ObjectHideFlags: 0
