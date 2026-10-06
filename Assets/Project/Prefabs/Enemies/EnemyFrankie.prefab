@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3239179842363793365}
   - component: {fileID: 4527837461503357943}
-  - component: {fileID: 5393343290793194192}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -92,24 +91,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &5393343290793194192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3747619812209459419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8cecd5a8df779c43ae64777ec3bfd50, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpriteLoopAnimator
-  spriteRenderer: {fileID: 4527837461503357943}
-  sprites:
-  - {fileID: 7277215093650894194, guid: d7ee1019833cbb44185e1efcd94117f3, type: 3}
-  - {fileID: -2513883589942956498, guid: d7ee1019833cbb44185e1efcd94117f3, type: 3}
-  frameDuration: 0.25
-  randomStart: 1
 --- !u!1 &4972416286880730697
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7b24844f67a9b34a8f5a610efaa924a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoveRightLeft
-  moveSpeed: 5
+  moveSpeed: 6
   direction: {x: -1, y: 0}
 --- !u!114 &2903697099078857127
 MonoBehaviour:

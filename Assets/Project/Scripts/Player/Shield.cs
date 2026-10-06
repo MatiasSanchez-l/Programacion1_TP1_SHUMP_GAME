@@ -3,7 +3,7 @@ using UnityEngine;
 public class Shield : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private float pulseDuration = 0.6f; // segundos de opaco a transparente
+    [SerializeField] private float pulseDuration = 0.6f;
     [SerializeField, Range(0f, 1f)] private float minAlpha = 0.1f;
     [SerializeField, Range(0f, 1f)] private float maxAlpha = 0.3f;
 

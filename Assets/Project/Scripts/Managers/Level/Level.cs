@@ -13,6 +13,7 @@ public class Level : MonoBehaviour
 
     private int score = 0;      
     private bool levelCompleted = false;
+    private bool allSpawned = true; 
     private float nextLevelTimer;
 
     void Start()
@@ -63,8 +64,23 @@ public class Level : MonoBehaviour
     public void RemoveEnemy()
     {
         numEnemies--;
+        CheckLevelCompleted();
+    }
 
-        if (numEnemies == 0 && !levelCompleted)
+    public void StartSpawning()
+    {
+        allSpawned = false;
+    }
+
+    public void SpawningFinished()
+    {
+        allSpawned = true;
+        CheckLevelCompleted();
+    }
+
+    private void CheckLevelCompleted()
+    {
+        if (allSpawned && numEnemies == 0 && !levelCompleted)
         {
             levelCompleted = true;
             nextLevelTimer = nextLevelDelay;

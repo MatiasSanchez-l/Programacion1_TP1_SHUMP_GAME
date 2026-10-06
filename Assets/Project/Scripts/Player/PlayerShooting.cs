@@ -6,7 +6,6 @@ public class PlayerShooting : MonoBehaviour
 
     private Gun[] guns;
 
-    // true = incluye también las armas desactivadas (las extra)
     void Start() { guns = GetComponentsInChildren<Gun>(true); }
 
     void Update()

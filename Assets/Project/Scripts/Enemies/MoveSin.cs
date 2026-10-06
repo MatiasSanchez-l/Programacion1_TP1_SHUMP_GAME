@@ -8,14 +8,12 @@ public class MoveSin : MonoBehaviour
     [SerializeField] private float frequency = 0.5f;
     [SerializeField] private bool inverted = false;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         sinCenterY = transform.position.y;
         startX = transform.position.x;
     }
 
-    // Update is called once per frame
     void Update()
     {
         Vector3 pos = transform.position;

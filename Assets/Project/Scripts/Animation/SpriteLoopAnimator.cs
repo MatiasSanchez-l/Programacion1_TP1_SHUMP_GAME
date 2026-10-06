@@ -1,12 +1,11 @@
 using UnityEngine;
 
-// Reproduce en loop una lista de sprites. Sirve para cualquier objeto en estado "idle".
 public class SpriteLoopAnimator : MonoBehaviour
 {
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private Sprite[] sprites;
-    [SerializeField] private float frameDuration = 0.15f; // segundos por frame
-    [SerializeField] private bool randomStart = true;     // para que no se muevan todos sincronizados
+    [SerializeField] private float frameDuration = 0.15f; 
+    [SerializeField] private bool randomStart = true;
 
     private float timeOffset;
 
@@ -14,7 +13,6 @@ public class SpriteLoopAnimator : MonoBehaviour
     {
         if (randomStart)
         {
-            // Desfase al azar dentro de una vuelta completa de la animación
             timeOffset = Random.Range(0f, sprites.Length * frameDuration);
         }
     }
