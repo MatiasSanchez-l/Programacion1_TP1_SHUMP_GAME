@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 6426905780213774284}
   - component: {fileID: 2943269459698187362}
   - component: {fileID: 7798470124179310328}
+  - component: {fileID: 3459016249328254229}
   - component: {fileID: 902843618359477968}
   - component: {fileID: 2668946410621412153}
   m_Layer: 0
@@ -183,6 +184,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58cdbd055a0f11d469095da34c30ba96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Destructable
+--- !u!114 &3459016249328254229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5013918839559750540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8cecd5a8df779c43ae64777ec3bfd50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteLoopAnimator
+  spriteRenderer: {fileID: 4486300962476047922}
+  sprites:
+  - {fileID: -2792402802363126846, guid: bdd4e1f553cda924abd63d07245747df, type: 3}
+  - {fileID: 112571745976006824, guid: bdd4e1f553cda924abd63d07245747df, type: 3}
+  frameDuration: 0.15
+  randomStart: 1
 --- !u!50 &902843618359477968
 Rigidbody2D:
   serializedVersion: 5

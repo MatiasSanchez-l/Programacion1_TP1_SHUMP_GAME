@@ -330,6 +330,7 @@ GameObject:
   - component: {fileID: 8797596959618118534}
   - component: {fileID: 6599054752087698079}
   - component: {fileID: 3450612167023368962}
+  - component: {fileID: 5339573396801517827}
   - component: {fileID: 2778821371834270607}
   - component: {fileID: 3273388414479707727}
   m_Layer: 0
@@ -400,6 +401,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4439c74c1a056e46ab517e4ed4f25e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
+  spriteAnimator: {fileID: 5339573396801517827}
+--- !u!114 &5339573396801517827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2240285009440100799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2be01d44038ea2a42b7c2c1a75a931c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSpriteAnimator
+  spriteRenderer: {fileID: 4634487371852988740}
+  idleSprite: {fileID: -3706269290203098351, guid: 2fd154180e40c6f41a31b5b04ee8028c, type: 3}
+  attackSprites:
+  - {fileID: 553181681000475623, guid: 2fd154180e40c6f41a31b5b04ee8028c, type: 3}
+  - {fileID: 6245781059959647230, guid: 2fd154180e40c6f41a31b5b04ee8028c, type: 3}
+  frameDuration: 0.08
 --- !u!50 &2778821371834270607
 Rigidbody2D:
   serializedVersion: 5
@@ -1100,7 +1120,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 6245781059959647230, guid: 2fd154180e40c6f41a31b5b04ee8028c, type: 3}
+  m_Sprite: {fileID: -4427067391171383870, guid: 2fd154180e40c6f41a31b5b04ee8028c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
