@@ -65,7 +65,7 @@ Con `Esc` el juego se congela. Desde ahí podés **continuar** (también con `Es
 
 ```
 Assets/Project/
-├── Art/          Sprites (fondos, jugador, enemigos, power-ups, UI)
+├── Art/          Sprites (fondos, jugador, enemigos, power-ups, proyectiles)
 ├── Audio/        Música de fondo y efectos de sonido
 ├── Materials/    Materiales de los fondos con scroll infinito
 ├── Prefabs/      Enemigos, proyectiles, power-ups, Level y AudioManager
