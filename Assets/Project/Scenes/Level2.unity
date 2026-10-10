@@ -501,8 +501,248 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8101d4922cceb8b478c69b483c7618f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  entries: []
-  spawnMarginX: 1
+  entries:
+  - time: 2
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.5
+    count: 5
+    interval: 0.4
+  - time: 4
+    prefab: {fileID: 5013918839559750540, guid: 65afcb4ba294b324883fa4ab7c35924f, type: 3}
+    height: 0.75
+    count: 1
+    interval: 0
+  - time: 6
+    prefab: {fileID: 5013918839559750540, guid: 65afcb4ba294b324883fa4ab7c35924f, type: 3}
+    height: 0.25
+    count: 1
+    interval: 0
+  - time: 8
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.3
+    count: 5
+    interval: 0.35
+  - time: 10
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.7
+    count: 5
+    interval: 0.35
+  - time: 12
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.5
+    count: 1
+    interval: 0
+  - time: 14
+    prefab: {fileID: 3649965191396315025, guid: 4cf7bf0e36ae642438b1875c02c63071, type: 3}
+    height: 0.5
+    count: 1
+    interval: 0
+  - time: 15
+    prefab: {fileID: 5013918839559750540, guid: 65afcb4ba294b324883fa4ab7c35924f, type: 3}
+    height: 0.15
+    count: 1
+    interval: 0
+  - time: 15
+    prefab: {fileID: 5013918839559750540, guid: 65afcb4ba294b324883fa4ab7c35924f, type: 3}
+    height: 0.85
+    count: 1
+    interval: 0
+  - time: 17
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.5
+    count: 6
+    interval: 0.3
+  - time: 19
+    prefab: {fileID: 5013918839559750540, guid: 97c3f5f237ba5f6468b46b15807a47fd, type: 3}
+    height: 0.3
+    count: 1
+    interval: 0
+  - time: 21
+    prefab: {fileID: 5013918839559750540, guid: 97c3f5f237ba5f6468b46b15807a47fd, type: 3}
+    height: 0.7
+    count: 1
+    interval: 0
+  - time: 23
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.25
+    count: 6
+    interval: 0.3
+  - time: 24
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.75
+    count: 1
+    interval: 0
+  - time: 27
+    prefab: {fileID: 5013918839559750540, guid: 65afcb4ba294b324883fa4ab7c35924f, type: 3}
+    height: 0.5
+    count: 3
+    interval: 1
+  - time: 29
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.7
+    count: 6
+    interval: 0.3
+  - time: 31
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.3
+    count: 1
+    interval: 0
+  - time: 31
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.7
+    count: 1
+    interval: 0
+  - time: 34
+    prefab: {fileID: 5013918839559750540, guid: dcb9a9e3ed617b247915852ec5466478, type: 3}
+    height: 0.5
+    count: 1
+    interval: 0
+  - time: 36
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.25
+    count: 6
+    interval: 0.3
+  - time: 36
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.75
+    count: 6
+    interval: 0.3
+  - time: 40
+    prefab: {fileID: 3649965191396315025, guid: aa34f3580243cce43b6f5e9f56196ed2, type: 3}
+    height: 0.5
+    count: 1
+    interval: 0
+  - time: 41
+    prefab: {fileID: 5013918839559750540, guid: 97c3f5f237ba5f6468b46b15807a47fd, type: 3}
+    height: 0.2
+    count: 1
+    interval: 0
+  - time: 41
+    prefab: {fileID: 5013918839559750540, guid: 97c3f5f237ba5f6468b46b15807a47fd, type: 3}
+    height: 0.8
+    count: 1
+    interval: 0
+  - time: 44
+    prefab: {fileID: 3649965191396315025, guid: 4cf7bf0e36ae642438b1875c02c63071, type: 3}
+    height: 0.6
+    count: 1
+    interval: 0
+  - time: 45
+    prefab: {fileID: 5013918839559750540, guid: dcb9a9e3ed617b247915852ec5466478, type: 3}
+    height: 0.5
+    count: 1
+    interval: 0
+  - time: 47
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.2
+    count: 1
+    interval: 0
+  - time: 47
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.8
+    count: 1
+    interval: 0
+  - time: 50
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.5
+    count: 8
+    interval: 0.25
+  - time: 52
+    prefab: {fileID: 5013918839559750540, guid: dcb9a9e3ed617b247915852ec5466478, type: 3}
+    height: 0.5
+    count: 1
+    interval: 0
+  - time: 53
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.5
+    count: 2
+    interval: 1.5
+  - time: 55
+    prefab: {fileID: 5013918839559750540, guid: 65afcb4ba294b324883fa4ab7c35924f, type: 3}
+    height: 0.15
+    count: 2
+    interval: 1
+  - time: 55
+    prefab: {fileID: 5013918839559750540, guid: 65afcb4ba294b324883fa4ab7c35924f, type: 3}
+    height: 0.85
+    count: 2
+    interval: 1
+  - time: 58
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.25
+    count: 1
+    interval: 0
+  - time: 58
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.75
+    count: 1
+    interval: 0
+  - time: 60
+    prefab: {fileID: 5013918839559750540, guid: dcb9a9e3ed617b247915852ec5466478, type: 3}
+    height: 0.5
+    count: 2
+    interval: 2.5
+  - time: 62
+    prefab: {fileID: 3649965191396315025, guid: 4cf7bf0e36ae642438b1875c02c63071, type: 3}
+    height: 0.4
+    count: 1
+    interval: 0
+  - time: 63
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.25
+    count: 6
+    interval: 0.25
+  - time: 63
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.75
+    count: 6
+    interval: 0.25
+  - time: 66
+    prefab: {fileID: 5013918839559750540, guid: 97c3f5f237ba5f6468b46b15807a47fd, type: 3}
+    height: 0.5
+    count: 2
+    interval: 1.5
+  - time: 68
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.15
+    count: 1
+    interval: 0
+  - time: 68
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.85
+    count: 1
+    interval: 0
+  - time: 70
+    prefab: {fileID: 5013918839559750540, guid: dcb9a9e3ed617b247915852ec5466478, type: 3}
+    height: 0.5
+    count: 1
+    interval: 0
+  - time: 72
+    prefab: {fileID: 5013918839559750540, guid: 65afcb4ba294b324883fa4ab7c35924f, type: 3}
+    height: 0.3
+    count: 2
+    interval: 1
+  - time: 72
+    prefab: {fileID: 5013918839559750540, guid: 65afcb4ba294b324883fa4ab7c35924f, type: 3}
+    height: 0.7
+    count: 2
+    interval: 1
+  - time: 74
+    prefab: {fileID: 5013918839559750540, guid: 74ff1c04808ecf94f8fbbf99d2e08ae3, type: 3}
+    height: 0.5
+    count: 2
+    interval: 1.5
+  - time: 76
+    prefab: {fileID: 5013918839559750540, guid: dcb9a9e3ed617b247915852ec5466478, type: 3}
+    height: 0.5
+    count: 1
+    interval: 0
+  - time: 78
+    prefab: {fileID: 4972416286880730697, guid: 52f1a1ff6b416c640810d375f45752b3, type: 3}
+    height: 0.5
+    count: 10
+    interval: 0.2
+  spawnMarginX: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
