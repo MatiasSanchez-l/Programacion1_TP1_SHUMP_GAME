@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-10-10 00:24:13
+ * @modify date 2026-10-10 00:24:13
+ * @desc música de fondo persistente y efectos de sonido del juego
+ */
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour

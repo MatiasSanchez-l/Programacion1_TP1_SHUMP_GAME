@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-09-26 20:12:44
+ * @modify date 2026-10-10 00:24:13
+ * @desc colisiones del jugador: daño, escudo, invencibilidad y power-ups
+ */
 using UnityEngine;
 
 public class Player : MonoBehaviour

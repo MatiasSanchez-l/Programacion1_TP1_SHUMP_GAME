@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-09-26 20:12:44
+ * @modify date 2026-09-26 20:12:44
+ * @desc desplaza la textura del fondo para lograr un scroll infinito
+ */
 using UnityEngine;
 
 public class ScrollingBackground : MonoBehaviour

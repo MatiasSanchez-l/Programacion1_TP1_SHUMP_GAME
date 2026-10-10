@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-09-28 19:46:30
+ * @modify date 2026-10-10 00:29:56
+ * @desc disparo del jugador con todas sus armas activas
+ */
 using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour

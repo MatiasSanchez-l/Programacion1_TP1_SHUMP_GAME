@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-10-10 00:36:57
+ * @modify date 2026-10-10 00:36:57
+ * @desc script reutilizable para loopear animaciones
+ */
 using UnityEngine;
 
 public class SpriteLoopAnimator : MonoBehaviour

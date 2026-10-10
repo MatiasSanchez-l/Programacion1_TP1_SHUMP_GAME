@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-09-26 20:12:44
+ * @modify date 2026-09-28 21:12:34
+ * @desc movimiento de las balas y destrucción al salir de pantalla
+ */
 using UnityEngine;
 
 public class Bullet : MonoBehaviour

@@ -1,3 +1,10 @@
+/**
+ * @author Matias
+ * @create date 2026-10-06 00:16:42
+ * @modify date 2026-10-06 00:16:42
+ * @desc instancia enemigos y power-ups según la lista de apariciones del nivel
+ * @assist Claude (IA, Anthropic)
+ */
 using System.Collections.Generic;
 using UnityEngine;
 

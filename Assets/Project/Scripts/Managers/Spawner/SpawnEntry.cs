@@ -1,3 +1,10 @@
+/**
+ * @author Matias
+ * @create date 2026-10-06 00:16:42
+ * @modify date 2026-10-06 00:16:42
+ * @desc datos de una aparición del spawner: qué, cuándo, dónde y cuántos
+ * @assist Claude (IA, Anthropic)
+ */
 using UnityEngine;
 
 

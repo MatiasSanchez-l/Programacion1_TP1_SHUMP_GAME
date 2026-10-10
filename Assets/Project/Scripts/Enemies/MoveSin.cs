@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-09-26 20:45:48
+ * @modify date 2026-10-06 00:16:42
+ * @desc movimiento ondulado en Y (onda senoidal) mientras el objeto avanza
+ */
 using UnityEngine;
 
 public class MoveSin : MonoBehaviour

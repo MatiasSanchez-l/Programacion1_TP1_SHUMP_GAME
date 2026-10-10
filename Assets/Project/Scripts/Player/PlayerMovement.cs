@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-09-26 20:12:44
+ * @modify date 2026-09-28 19:46:30
+ * @desc movimiento del jugador con límites de pantalla
+ */
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour

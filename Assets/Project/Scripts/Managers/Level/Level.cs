@@ -1,3 +1,10 @@
+/**
+ * @author Matias
+ * @create date 2026-09-28 20:40:56
+ * @modify date 2026-10-10 00:29:56
+ * @desc manager del nivel: enemigos, cambio de nivel, score, pausa, Game Over y Victoria
+ * @assist Claude (IA, Anthropic)
+ */
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;          

@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-10-05 21:20:19
+ * @modify date 2026-10-05 21:20:19
+ * @desc cambia el sprite del jugador entre idle y ataque
+ */
 using UnityEngine;
 
 public class PlayerSpriteAnimator : MonoBehaviour

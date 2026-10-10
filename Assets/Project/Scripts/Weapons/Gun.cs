@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-09-27 21:50:53
+ * @modify date 2026-10-10 00:24:13
+ * @desc arma que dispara balas en la dirección en que apunta (jugador y enemigos)
+ */
 using UnityEngine;
 
 public class Gun : MonoBehaviour

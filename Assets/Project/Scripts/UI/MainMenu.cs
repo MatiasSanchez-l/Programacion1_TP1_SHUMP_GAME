@@ -1,3 +1,9 @@
+/**
+ * @author Matias
+ * @create date 2026-10-05 21:02:34
+ * @modify date 2026-10-05 21:02:34
+ * @desc botones del menú principal: jugar, créditos y salir
+ */
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
