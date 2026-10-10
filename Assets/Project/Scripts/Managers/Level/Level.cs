@@ -10,6 +10,10 @@ public class Level : MonoBehaviour
     [SerializeField] private int numEnemies = 0;
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject victoryPanel;
+    [SerializeField] private TMP_Text victoryText;
+    [SerializeField] private string wonMessage = "¡VICTORIA!";
+    [SerializeField] private string survivedMessage = "¡AGUANTASTE!";
 
     private int score = 0;      
     private bool levelCompleted = false;
@@ -20,6 +24,7 @@ public class Level : MonoBehaviour
     {
         UpdateScoreText();
         gameOverPanel.SetActive(false);
+        victoryPanel.SetActive(false);
     }
 
     public void AddScore(int points)
@@ -97,12 +102,30 @@ public class Level : MonoBehaviour
         }
         else
         {
-            Debug.Log("¡Ganaste! No hay más niveles");
+            Victory(true);
         }
     }
 
     public void GameOver(){
+        if (IsLastLevel())
+        {
+            Victory(false);
+            return;
+        }
+
         gameOverPanel.SetActive(true);
+        Time.timeScale = 0f;
+    }
+
+    private bool IsLastLevel(){
+        return SceneManager.GetActiveScene().buildIndex == SceneManager.sceneCountInBuildSettings - 1;
+    }
+
+    private void Victory(bool won){
+        string title = won ? wonMessage : survivedMessage;
+        victoryText.text = title + "\n<size=50%>SCORE: " + score.ToString("D6") + "</size>";
+
+        victoryPanel.SetActive(true);
         Time.timeScale = 0f;
     }
 
