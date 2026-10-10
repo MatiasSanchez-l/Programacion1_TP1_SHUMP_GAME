@@ -14,6 +14,7 @@ public class Level : MonoBehaviour
     [SerializeField] private TMP_Text victoryText;
     [SerializeField] private string wonMessage = "¡VICTORIA!";
     [SerializeField] private string survivedMessage = "¡AGUANTASTE!";
+    [SerializeField] private AudioClip gameOverSound;
 
     private int score = 0;      
     private bool levelCompleted = false;
@@ -113,6 +114,9 @@ public class Level : MonoBehaviour
             return;
         }
 
+        if (AudioManager.instance != null) AudioManager.instance.PauseMusic();
+        AudioManager.Play(gameOverSound);
+
         gameOverPanel.SetActive(true);
         Time.timeScale = 0f;
     }
@@ -140,6 +144,7 @@ public class Level : MonoBehaviour
     private void LeaveTo(string sceneName)
     {
         Time.timeScale = 1f;
+        if (AudioManager.instance != null) AudioManager.instance.ResumeMusic();
         instance = null;
         Destroy(gameObject);
         SceneManager.LoadScene(sceneName);

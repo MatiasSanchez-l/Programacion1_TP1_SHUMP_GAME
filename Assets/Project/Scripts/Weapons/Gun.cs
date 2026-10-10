@@ -19,20 +19,21 @@ public class Gun : MonoBehaviour
         if (autoShoot) Shoot();
     }
 
-    public void Shoot()
+    public bool Shoot()
     {
         if (!IsOnScreen())
         {
             nextShotTime = Time.time + shootDelay;
-            return;
+            return false;
         }
 
-        if (Time.time < nextShotTime) return;
+        if (Time.time < nextShotTime) return false;
 
         nextShotTime = Time.time + fireRate;
 
         Bullet newBullet = Instantiate(bullet, transform.position, transform.rotation);
         newBullet.SetDirection(transform.right);
+        return true;
     }
 
     private bool IsOnScreen()

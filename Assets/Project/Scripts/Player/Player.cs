@@ -4,6 +4,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] private Shield shield;
     [SerializeField] private Gun[] extraGuns;
+    [SerializeField] private AudioClip damageSound;
 
     [Header("Invencibilidad")]
     [SerializeField] private SpriteRenderer playerSprite;
@@ -41,12 +42,15 @@ public class Player : MonoBehaviour
         }
 
         if (collision.TryGetComponent(out PowerUp powerUp)){
+            AudioManager.Play(powerUp.PickupSound);
             ApplyPowerUp(powerUp.Type);
             Destroy(powerUp.gameObject);
         }
     }
 
     void TakeHit(){
+        AudioManager.Play(damageSound);
+
         if (shield.IsActive)
         {
             shield.Deactivate();

@@ -430,6 +430,7 @@ MonoBehaviour:
   invincibleDuration: 1.5
   blinkInterval: 0.08
   blinkAlpha: 0.25
+  damageSound: {fileID: 8300000, guid: 0bc3b1912782aa14097987a1f6b044ca, type: 3}
 --- !u!114 &6599054752087698079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -457,6 +458,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
   spriteAnimator: {fileID: 5339573396801517827}
+  shootSound: {fileID: 8300000, guid: 4512c46ce8e50094f89f140447e475db, type: 3}
+  shootVolume: 0.4
 --- !u!114 &5339573396801517827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1473,6 +1476,7 @@ MonoBehaviour:
   gameOverPanel: {fileID: 6612132204065537673}
   victoryPanel: {fileID: 668936684897246257}
   victoryText: {fileID: 648426402074299843}
+  gameOverSound: {fileID: 8300000, guid: 1717a0ffbfd0f394c8e628d9c6545c75, type: 3}
 --- !u!1 &8679418430218235663
 GameObject:
   m_ObjectHideFlags: 0

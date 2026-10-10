@@ -64,6 +64,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PowerUp
   activateShield: 0
   addGuns: 0
+  pickupSound: {fileID: 8300000, guid: addb2430861c55542a2f2c9352a0bb3d, type: 3}
 --- !u!114 &1948680255012186849
 MonoBehaviour:
   m_ObjectHideFlags: 0

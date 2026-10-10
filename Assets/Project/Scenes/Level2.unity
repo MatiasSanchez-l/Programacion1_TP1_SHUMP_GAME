@@ -743,6 +743,23 @@ MonoBehaviour:
     count: 10
     interval: 0.2
   spawnMarginX: 2
+--- !u!1001 &160932861969112717
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 305125708838634762, guid: 6a0d15f6905d4c3425f1272f983fdff3, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6a0d15f6905d4c3425f1272f983fdff3, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -752,3 +769,4 @@ SceneRoots:
   - {fileID: 2065167966}
   - {fileID: 968479648}
   - {fileID: 2097134928}
+  - {fileID: 160932861969112717}
