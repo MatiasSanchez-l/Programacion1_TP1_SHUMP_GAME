@@ -10,6 +10,7 @@ public class Level : MonoBehaviour
     [SerializeField] private int numEnemies = 0;
     [SerializeField] private TMP_Text scoreText;
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject pausePanel;
     [SerializeField] private GameObject victoryPanel;
     [SerializeField] private TMP_Text victoryText;
     [SerializeField] private string wonMessage = "¡VICTORIA!";
@@ -20,11 +21,15 @@ public class Level : MonoBehaviour
     private bool levelCompleted = false;
     private bool allSpawned = true; 
     private float nextLevelTimer;
+    private bool isPaused = false;
+
+    public bool IsPaused => isPaused;
 
     void Start()
     {
         UpdateScoreText();
         gameOverPanel.SetActive(false);
+        pausePanel.SetActive(false);
         victoryPanel.SetActive(false);
     }
 
@@ -53,6 +58,8 @@ public class Level : MonoBehaviour
     }
 
     void Update(){
+        if (Input.GetKeyDown(KeyCode.Escape)) TogglePause();
+
         if (!levelCompleted) return;
 
         nextLevelTimer -= Time.deltaTime;
@@ -131,6 +138,27 @@ public class Level : MonoBehaviour
 
         victoryPanel.SetActive(true);
         Time.timeScale = 0f;
+    }
+
+    private void TogglePause(){
+        if (gameOverPanel.activeSelf || victoryPanel.activeSelf) return;
+
+        if (isPaused) Resume();
+        else Pause();
+    }
+
+    private void Pause(){
+        isPaused = true;
+        pausePanel.SetActive(true);
+        Time.timeScale = 0f;
+        if (AudioManager.instance != null) AudioManager.instance.PauseMusic();
+    }
+
+    public void Resume(){
+        isPaused = false;
+        pausePanel.SetActive(false);
+        Time.timeScale = 1f;
+        if (AudioManager.instance != null) AudioManager.instance.ResumeMusic();
     }
 
     public void Retry(){

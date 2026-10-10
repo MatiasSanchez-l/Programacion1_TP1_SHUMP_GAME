@@ -12,6 +12,8 @@ public class PlayerShooting : MonoBehaviour
 
     void Update()
     {
+        if (Time.timeScale == 0f) return;
+
         bool shooting = Input.GetKey(KeyCode.Z);
 
         if (shooting)
